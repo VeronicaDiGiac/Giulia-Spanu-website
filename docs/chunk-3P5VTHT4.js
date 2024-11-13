@@ -1,0 +1,1 @@
+import{Ba as s,Da as r,Q as n,xa as i,ya as o}from"./chunk-MAHMEJJJ.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-servizi-section"]],standalone:!0,features:[r],decls:2,vars:0,template:function(e,p){e&1&&(i(0,"p"),s(1,"servizi-section works!"),o())}})};export{a as ServiziSectionComponent};

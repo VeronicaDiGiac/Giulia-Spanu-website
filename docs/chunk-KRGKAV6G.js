@@ -1,0 +1,1 @@
+import{Ba as s,Da as c,Q as n,xa as t,ya as i}from"./chunk-MAHMEJJJ.js";var a=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=n({type:o,selectors:[["app-chi-sono-section"]],standalone:!0,features:[c],decls:2,vars:0,template:function(e,m){e&1&&(t(0,"p"),s(1," chi-sono-section works! "),i())}})};export{a as ChiSonoSectionComponent};

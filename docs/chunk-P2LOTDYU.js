@@ -1,0 +1,1 @@
+import{Ba as a,Da as c,Q as n,xa as o,ya as i}from"./chunk-MAHMEJJJ.js";var s=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-contatti-section"]],standalone:!0,features:[c],decls:2,vars:0,template:function(t,m){t&1&&(o(0,"p"),a(1," contatti-section works! "),i())}})};export{s as ContattiSectionComponent};

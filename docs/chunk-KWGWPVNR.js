@@ -1,0 +1,1 @@
+import{Ba as c,Da as a,Q as o,xa as n,ya as i}from"./chunk-MAHMEJJJ.js";var r=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-articoli-section"]],standalone:!0,features:[a],decls:2,vars:0,template:function(e,l){e&1&&(n(0,"p"),c(1," articoli-section works! "),i())}})};export{r as ArticoliSectionComponent};
