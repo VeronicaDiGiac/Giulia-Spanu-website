@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'app-contact',
   standalone: true,
   imports: [],
-  template: `<section class=" p-8">
-    <div class="max-w-2xl mx-auto bg-gray-200 p-6 rounded-lg shadow-lg">
+  template: `<section class="p-4 sm:p-6 md:p-8">
+    <div class="max-w-lg mx-auto bg-gray-200 p-4 sm:p-6 rounded-lg shadow-lg">
       <form>
-        <!-- Griglia a 2 colonne -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Griglia responsiva -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <!-- Nome -->
           <div class="mb-4">
             <label for="nome" class="block text-gray-700 font-medium mb-2"
@@ -38,7 +38,7 @@ import { Component } from '@angular/core';
           </div>
 
           <!-- Email -->
-          <div class="mb-4">
+          <div class="mb-4 col-span-1 sm:col-span-2">
             <label for="email" class="block text-gray-700 font-medium mb-2"
               >Email</label
             >
@@ -46,13 +46,13 @@ import { Component } from '@angular/core';
               type="email"
               id="email"
               name="email"
-              class="w-72 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+              class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
               required
             />
           </div>
 
           <!-- Messaggio -->
-          <div class="mb-6 col-span-2">
+          <div class="mb-6 col-span-1 sm:col-span-2">
             <label for="messaggio" class="block text-gray-700 font-medium mb-2"
               >Messaggio</label
             >
@@ -66,11 +66,11 @@ import { Component } from '@angular/core';
           </div>
         </div>
 
-        <!-- Bottone  -->
+        <!-- Bottone -->
         <div class="text-center">
           <button
             type="submit"
-            class="px-6 py-3 bg-blue-300 text-white font-semibold rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            class="px-6 py-3 bg-blue-300 text-white font-semibold rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 w-full sm:w-auto"
           >
             Invia Messaggio
           </button>

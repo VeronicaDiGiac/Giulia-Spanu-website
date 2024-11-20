@@ -32,7 +32,6 @@ import { RouterLink } from '@angular/router';
             <li class="p-1">Chi sono</li>
             <li class="p-1">Servizi</li>
             <li class="p-1">Contatti</li>
-            <li class="p-1">Articoli</li>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl " routerLink="home">Giulia Spanu</a>
@@ -47,9 +46,6 @@ import { RouterLink } from '@angular/router';
           </li>
           <li class="text-lg  hover:bg-blue-200 rounded-full">
             <a routerLink="contatti">Contatti</a>
-          </li>
-          <li class="text-lg  hover:bg-blue-200 rounded-full">
-            <a routerLink="articoli">Articoli</a>
           </li>
         </ul>
       </div>

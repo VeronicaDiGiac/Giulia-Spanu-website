@@ -20,13 +20,7 @@ export const routes: Routes = [
         (m) => m.ServiziSectionComponent
       ),
   },
-  {
-    path: 'articoli',
-    loadComponent: () =>
-      import('./components/articoli-section/articoli-section.component').then(
-        (m) => m.ArticoliSectionComponent
-      ),
-  },
+
   {
     path: 'contatti',
     loadComponent: () =>

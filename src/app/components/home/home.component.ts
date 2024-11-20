@@ -38,11 +38,11 @@ import { ContactComponent } from '../contact/contact.component';
     </div>
     <!-- Colonna Chi siamo -->
     <div
-      class="flex flex-col items-center justify-center  text-center mt-20 mb-10"
+      class="flex flex-col items-start justify-start  text-center mt-20 mb-10"
     >
-      <h1 class="text-4xl font-bold mb-4">Chi Sono</h1>
+      <!-- <h1 class="text-4xl font-bold mb-4">Chi Sono</h1> -->
       <p
-        class="text-gray-600 leading-relaxed text-xl w-full max-w-3xl h-auto mx-auto p-4 font-semibold"
+        class="text-gray-600 leading-relaxed text-xl text-left w-full max-w-3xl h-auto mx-auto p-4 font-semibold"
       >
         Mi chiamo <strong>Giulia Spanu</strong>, sono nata a Roma nel 1993, e
         sono una Psicologa Clinica specializzanda in Psicoterapia Umanistico
@@ -56,7 +56,10 @@ import { ContactComponent } from '../contact/contact.component';
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
       <!-- Card Ansia -->
       <div class="card bg-blue-100 shadow-lg rounded-lg p-6">
-        <h2 class="text-2xl font-semibold text-blue-600 mb-4">Ansia</h2>
+        <div class="flex items-center mb-4">
+          <h2 class="text-2xl font-semibold text-blue-600">Ansia</h2>
+          <img alt="Icona Ansia" class="w-6 h-6 ml-4" />
+        </div>
         <p class="text-gray-700">
           L'ansia è una risposta emotiva naturale, ma se non gestita può
           interferire con la vita quotidiana. Scopri come affrontarla con
@@ -82,10 +85,11 @@ import { ContactComponent } from '../contact/contact.component';
 
       <!-- Card Adolescenza -->
       <div class="card bg-green-100 shadow-lg rounded-lg p-6">
-        <h2 class="text-2xl font-semibold text-green-600 mb-4">Adolescenza</h2>
+        <h2 class="text-2xl font-semibold text-green-600 mb-4">Stress</h2>
         <p class="text-gray-700">
-          L'adolescenza è un periodo di grandi cambiamenti. Approfondisci le
-          sfide e le opportunità che essa presenta per una crescita sana.
+          Lo stress è una risposta psicofisica a compiti anche diversi tra loro,
+          di natura emotiva, cognitiva o sociale, che la persona percepisce come
+          eccessivi.
         </p>
         <a href="#" class="mt-4 text-green-500 hover:text-green-700"
           >Scopri di più</a
@@ -302,7 +306,7 @@ import { ContactComponent } from '../contact/contact.component';
     height:600px;
   }
   .home-background-yoga{
-    background-image: url('src/assets/immagine.png');
+    background-image: url('src/assets/yogaimg.png');
     background-size: cover;
     background-position: cover;
     width: 500px;
@@ -326,6 +330,28 @@ import { ContactComponent } from '../contact/contact.component';
   }
   
   
+  
 `,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  homePageCards: any = [
+    {
+      titolo: 'Ansia',
+      descrizione:
+        "L'ansia è una risposta emotiva naturale, ma se non gestita può interferire con la vita quotidiana. Scopri come affrontarla con strategie efficaci.",
+      icon: 'path/to/anxiety-icon.png',
+    },
+    {
+      titolo: 'Depressione',
+      descrizione:
+        'La depressione può portare a sentimenti di tristezza persistente. Scopri le risorse e i trattamenti disponibili per migliorare il tuo benessere.',
+      icon: 'path/to/depression-icon.png',
+    },
+    {
+      titolo: 'Stress',
+      descrizione:
+        'Lo stress è una risposta psicofisica a compiti anche diversi tra loro, di natura emotiva, cognitiva o sociale, che la persona percepisce come eccessivi.',
+      icon: 'path/to/stress-icon.png',
+    },
+  ];
+}
