@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 import { ContactComponent } from '../contact/contact.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonComponent, ContactComponent],
+  imports: [ButtonComponent, ContactComponent, RouterLink],
   template: `
     <div
       class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 p-10"
@@ -25,6 +26,7 @@ import { ContactComponent } from '../contact/contact.component';
         </p>
         <app-button
           [btnlabel]="'Contatti'"
+          routerLink="contatti"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
         ></app-button>
       </div>
@@ -58,14 +60,13 @@ import { ContactComponent } from '../contact/contact.component';
       <div class="card bg-blue-100 shadow-lg rounded-lg p-6">
         <div class="flex items-center mb-4">
           <h2 class="text-2xl font-semibold text-blue-600">Ansia</h2>
-          <img alt="Icona Ansia" class="w-6 h-6 ml-4" />
         </div>
         <p class="text-gray-700">
           L'ansia è una risposta emotiva naturale, ma se non gestita può
           interferire con la vita quotidiana. Scopri come affrontarla con
           strategie efficaci.
         </p>
-        <a href="#" class="mt-4 text-blue-500 hover:text-blue-700"
+        <a routerLink="servizi" class="mt-4 text-blue-500 hover:text-blue-700"
           >Scopri di più</a
         >
       </div>
@@ -78,7 +79,9 @@ import { ContactComponent } from '../contact/contact.component';
           Scopri le risorse e i trattamenti disponibili per migliorare il tuo
           benessere.
         </p>
-        <a href="#" class="mt-4 text-purple-500 hover:text-purple-700"
+        <a
+          routerLink="servizi"
+          class="mt-4 text-purple-500 hover:text-purple-700"
           >Scopri di più</a
         >
       </div>
@@ -91,7 +94,7 @@ import { ContactComponent } from '../contact/contact.component';
           di natura emotiva, cognitiva o sociale, che la persona percepisce come
           eccessivi.
         </p>
-        <a href="#" class="mt-4 text-green-500 hover:text-green-700"
+        <a routerLink="servizi" class="mt-4 text-green-500 hover:text-green-700"
           >Scopri di più</a
         >
       </div>
@@ -123,6 +126,7 @@ import { ContactComponent } from '../contact/contact.component';
         </p>
         <app-button
           [btnlabel]="'Servizi'"
+          routerLink="servizi"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
         ></app-button>
       </div>
@@ -138,7 +142,7 @@ import { ContactComponent } from '../contact/contact.component';
           comunicazione e gestione dei conflitti per creare una connessione più
           profonda e duratura.
         </p>
-        <a href="#" class="mt-4 text-blue-500 hover:text-blue-700"
+        <a routerLink="servizi" class="mt-4 text-blue-500 hover:text-blue-700"
           >Scopri di più</a
         >
       </div>
@@ -153,7 +157,9 @@ import { ContactComponent } from '../contact/contact.component';
           personali, con l’obiettivo di ritrovare equilibrio e benessere
           interiore.
         </p>
-        <a href="#" class="mt-4 text-purple-500 hover:text-purple-700"
+        <a
+          routerLink="servizi"
+          class="mt-4 text-purple-500 hover:text-purple-700"
           >Scopri di più</a
         >
       </div>
@@ -168,7 +174,7 @@ import { ContactComponent } from '../contact/contact.component';
           per migliorare la comunicazione e creare un ambiente familiare più
           armonioso.
         </p>
-        <a href="#" class="mt-4 text-green-500 hover:text-green-700"
+        <a routerLink="servizi" class="mt-4 text-green-500 hover:text-green-700"
           >Scopri di più</a
         >
       </div>
@@ -205,6 +211,7 @@ import { ContactComponent } from '../contact/contact.component';
         </p>
         <app-button
           [btnlabel]="'Scopri di più'"
+          routerLink="chi-sono"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
         ></app-button>
       </div>
@@ -219,7 +226,7 @@ import { ContactComponent } from '../contact/contact.component';
           consapevolezza.
         </p>
         <a
-          href="#"
+          routerLink="servizi"
           class="mt-4 inline-block text-yellow-500 hover:text-yellow-700"
           >Scopri di più</a
         >
@@ -233,7 +240,9 @@ import { ContactComponent } from '../contact/contact.component';
           esplorare emozioni, promuovere autoconoscenza e migliorare il
           benessere psicologico.
         </p>
-        <a href="#" class="mt-4 inline-block text-pink-500 hover:text-pink-700"
+        <a
+          routerLink="servizi"
+          class="mt-4 inline-block text-pink-500 hover:text-pink-700"
           >Scopri di più</a
         >
       </div>
@@ -256,6 +265,7 @@ import { ContactComponent } from '../contact/contact.component';
         </p>
         <app-button
           [btnlabel]="'Scopi di più'"
+          routerLink="servizi"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
         ></app-button>
       </div>
@@ -326,7 +336,7 @@ import { ContactComponent } from '../contact/contact.component';
     width: 300px;
     height:400px;
     position: relative;
-   bottom: -210px;
+   bottom: -197px;
   }
   
   
