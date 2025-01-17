@@ -12,7 +12,6 @@ import { NgFor, NgClass } from '@angular/common';
         'bg-blue-100 hover:bg-blue-200': !sfondoGiallo,
         'bg-yellow-100 hover:bg-yellow-200 ': sfondoGiallo,
         ' bg-pink-100 hover:bg-pink-200': sfondoRosa,
-
       }"
     >
       <h3 class="text-xl font-bold mb-4 text-gray-700">
