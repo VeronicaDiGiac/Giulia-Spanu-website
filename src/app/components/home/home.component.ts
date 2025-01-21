@@ -9,14 +9,14 @@ import { RouterLink } from '@angular/router';
   imports: [ButtonComponent, ContactComponent, RouterLink],
   template: `
     <div
-      class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 p-10"
+      class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 p-10 sm: mb-5>"
     >
       <!-- Colonna con testo -->
       <div class="w-full md:w-1/2 text-center md:text-left sm:text-center">
-        <h1 class="text-4xl font-bold mb-4">
+        <h1 class="lg:text-4xl font-bold mb-4 sm: text-2xl">
           Ogni emozione merita ascolto e comprensione.
         </h1>
-        <p class="text-gray-600 leading-relaxed text-xl">
+        <p class="text-gray-600 leading-relaxed lg:text-xl sm:text-md">
           La nostra mente è complessa e affascinante, capace di provare una
           vasta gamma di emozioni, tutte meritevoli di ascolto e di
           comprensione. Mi impegno ad accompagnarti nel percorso di esplorazione
@@ -27,31 +27,34 @@ import { RouterLink } from '@angular/router';
         <app-button
           [btnlabel]="'Contatti'"
           routerLink="contatti"
-          class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
+          class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5 "
         ></app-button>
       </div>
 
       <!-- Colonna con immagine -->
       <div class="flex justify-center items-center sm:mt-5">
         <div class="w-full md:w-1/2">
-          <div class="home-background w-full h-72 md:h-96"></div>
+          <div class="home-background lg:w-full h-72 md:h-96 sm:w-32"></div>
         </div>
       </div>
     </div>
+
     <!-- Colonna Chi siamo -->
     <div
-      class="flex flex-col items-start justify-start  text-center mt-20 mb-10"
+      class="flex flex-col items-start justify-start mt-2 mb-15 px-10 md:px-20 mb-20"
     >
-      <!-- <h1 class="text-4xl font-bold mb-4">Chi Sono</h1> -->
       <p
-        class="text-gray-600 leading-relaxed text-xl text-left w-full max-w-3xl h-auto mx-auto p-4 font-semibold"
+        class="text-gray-600  w-full max-w-3xl h-auto leading-relaxed lg:text-xl sm:text-sm"
       >
-        Mi chiamo <strong>Giulia Spanu</strong>, sono nata a Roma nel 1993, e
-        sono una Psicologa Clinica specializzanda in Psicoterapia Umanistico
-        Esistenziale, Arteterapeuta ed Insegnante certificata KRI di Kundalini
-        Yoga.Sono sempre stata attratta dall'interiorità dell'essere umano,
-        dalla Psiche, e da tutti quelle spinte inconsce che spesso sembrano
-        dirigere la nostra vita in maniera non del tutto consapevole.
+        Mi chiamo
+        <span class="lg:text-4xl font-bold sm: text-3xl text-blue-500 p-3"
+          >Giulia Spanu</span
+        >, sono nata a Roma nel 1993, e sono una Psicologa Clinica
+        specializzanda in Psicoterapia Umanistico Esistenziale, Arteterapeuta ed
+        Insegnante certificata KRI di Kundalini Yoga. Sono sempre stata attratta
+        dall'interiorità dell'essere umano, dalla Psiche, e da tutti quelle
+        spinte inconsce che spesso sembrano dirigere la nostra vita in maniera
+        non del tutto consapevole.
       </p>
     </div>
 
@@ -59,7 +62,7 @@ import { RouterLink } from '@angular/router';
       <!-- Card Ansia -->
       <div class="card bg-blue-100 shadow-lg rounded-lg p-6">
         <div class="flex items-center mb-4">
-          <h2 class="text-2xl font-semibold text-blue-600">Ansia</h2>
+          <h2 class="text-2xl font-semibold text-blue-600 ">Ansia</h2>
         </div>
         <p class="text-gray-700">
           L'ansia è una risposta emotiva naturale, ma se non gestita può
@@ -112,10 +115,10 @@ import { RouterLink } from '@angular/router';
 
       <!-- Descrizione a destra -->
       <div class="w-full md:w-1/2 text-center md:text-left p-5">
-        <h1 class="text-3xl font-bold mb-4">
+        <h1 class=" lg:text-3xl font-bold mb-4 sm: text-2xl">
           Concentrati su ciò che conta di più
         </h1>
-        <p class="text-gray-600 leading-relaxed text-md">
+        <p class="text-gray-600 leading-relaxed lg:text-xl sm:text-sm">
           Prenditi il tempo per ascoltare ciò che davvero conta dentro di te.
           Spesso, tra i ritmi frenetici della vita quotidiana, perdiamo di vista
           il nostro benessere interiore e ciò che è essenziale per la nostra
@@ -127,7 +130,7 @@ import { RouterLink } from '@angular/router';
         <app-button
           [btnlabel]="'Servizi'"
           routerLink="servizi"
-          class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
+          class="btn lg:btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5 sm btn-lg"
         ></app-button>
       </div>
     </div>
@@ -193,8 +196,10 @@ import { RouterLink } from '@angular/router';
 
       <!-- Descrizione a destra -->
       <div class="w-full md:w-1/2 text-center md:text-left p-5 ">
-        <h1 class="text-3xl font-bold mb-4">Come ho scoperto lo Yoga?</h1>
-        <p class="text-gray-600 leading-relaxed text-lg">
+        <h1 class="lg:text-3xl font-bold mb-4 sm: text-2xl">
+          Come ho scoperto lo Yoga?
+        </h1>
+        <p class="text-gray-600 leading-relaxed lg:text-xl sm:text-sm">
           All'età di 14 anni, ho iniziato a esplorare le filosofie orientali,
           intraprendendo un percorso di introspezione e meditazione attraverso
           la pratica dello yoga. Questa esperienza mi ha guidato verso una
@@ -252,8 +257,10 @@ import { RouterLink } from '@angular/router';
     >
       <!-- Colonna con testo -->
       <div class="w-full md:w-1/2 text-center md:text-left sm:text-center ">
-        <h1 class="text-3xl font-bold mb-4">Arte: una nostra alleata</h1>
-        <p class="text-gray-600 leading-relaxed text-xl">
+        <h1 class="lg:text-3xl font-bold mb-4 sm: text-2xl">
+          Arte: una nostra alleata
+        </h1>
+        <p class="text-gray-600 leading-relaxed lg:text-xl sm:text-sm">
           In qualità di arteterapeuta, integro nelle mie sedute, quando
           appropriato o su richiesta, tecniche di espressione creativa per
           facilitare un percorso di esplorazione interiore. Attraverso l’uso
@@ -280,7 +287,9 @@ import { RouterLink } from '@angular/router';
     <!-- contatti -->
     <div class="text-center mt-10 sm:mt-20">
       <!-- Titolo -->
-      <h1 class="text-3xl font-bold p-2 ">Vuoi saperne di più?</h1>
+      <h1 class="lg:text-3xl font-bold mb-4 sm: text-2xl ">
+        Vuoi saperne di più?
+      </h1>
 
       <!-- Paragrafo -->
       <p class="text-gray-600 leading-relaxed text-xl sm:text-xl md:text-2xl">
@@ -336,9 +345,27 @@ import { RouterLink } from '@angular/router';
     width: 300px;
     height:400px;
     position: relative;
-   bottom: -197px;
+   bottom: -190px;
   }
-  
+  @media (max-width: 768px) {
+  .home-background {
+    width: 300px;
+    height: 400px;
+  }
+  .home-background-yoga {
+    width: 400px; /* Dimensioni ridotte per smartphone */
+    height: 350px;
+  margin-left: -15px;
+  }
+}
+
+// @media (max-width: 480px) {
+//   .home-background-yoga {
+//     width: 200px;
+//     height: 200px;
+//     margin: 0 auto; /* Mantieni centrata l'immagine */
+//   }
+// }
   
   
 `,

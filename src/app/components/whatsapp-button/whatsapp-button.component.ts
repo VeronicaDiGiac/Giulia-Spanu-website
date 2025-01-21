@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     <a
       [href]="whatsAppUrl"
       target="_blank"
-      class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300"
+      class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

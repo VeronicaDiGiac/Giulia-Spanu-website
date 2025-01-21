@@ -12,7 +12,6 @@ import { RouterLink } from '@angular/router';
         <a class="link link-hover" routerLink="servizi">Servizi</a>
         <a class="link link-hover" routerLink="contatti">Contatti</a>
       </nav>
-
       <nav>
         <!-- Instagram -->
         <h6 class="footer-title">Social</h6>
@@ -47,7 +46,7 @@ import { RouterLink } from '@angular/router';
 
         <!-- Email -->
         <a
-          href="mailto:giuliaspanu93@libero.it"
+          href="mailto:giuliaspanupsicologa@gmail.it"
           class="link link-hover flex items-center space-x-2 text-gray-800 hover:text-blue-600"
         >
           <svg
