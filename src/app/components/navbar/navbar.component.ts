@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgIf } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -39,14 +38,23 @@ import { RouterOutlet } from '@angular/router';
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li class="text-lg hover:bg-blue-200 rounded-full">
-              <a routerLink="chi-sono">Chi sono</a>
+            <li
+              routerLink="chi-sono"
+              class="text-lg hover:bg-blue-200 rounded-full"
+            >
+              <a>Chi sono</a>
             </li>
-            <li class="text-lg hover:bg-blue-200 rounded-full">
-              <a routerLink="servizi">Servizi</a>
+            <li
+              routerLink="servizi"
+              class="text-lg hover:bg-blue-200 rounded-full"
+            >
+              <a>Servizi</a>
             </li>
-            <li class="text-lg hover:bg-blue-200 rounded-full">
-              <a routerLink="contatti">Contatti</a>
+            <li
+              routerLink="contatti"
+              class="text-lg hover:bg-blue-200 rounded-full"
+            >
+              <a>Contatti</a>
             </li>
           </ul>
         </div>

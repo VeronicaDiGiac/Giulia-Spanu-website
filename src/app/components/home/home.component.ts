@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 import { ContactComponent } from '../contact/contact.component';
 import { RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonComponent, ContactComponent, RouterLink],
+  imports: [ButtonComponent, ContactComponent, RouterLink, RouterModule],
   template: `
     <div
       class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 p-10 sm: mb-5>"
@@ -26,7 +27,7 @@ import { RouterLink } from '@angular/router';
         </p>
         <app-button
           [btnlabel]="'Contatti'"
-          routerLink="contatti"
+          [routerLink]="'/contatti'"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5 "
         ></app-button>
       </div>
@@ -69,7 +70,9 @@ import { RouterLink } from '@angular/router';
           interferire con la vita quotidiana. Scopri come affrontarla con
           strategie efficaci.
         </p>
-        <a routerLink="servizi" class="mt-4 text-blue-500 hover:text-blue-700"
+        <a
+          [routerLink]="'/servizi'"
+          class="mt-4 text-blue-500 hover:text-blue-700"
           >Scopri di più</a
         >
       </div>
@@ -83,7 +86,7 @@ import { RouterLink } from '@angular/router';
           benessere.
         </p>
         <a
-          routerLink="servizi"
+          [routerLink]="'/servizi'"
           class="mt-4 text-purple-500 hover:text-purple-700"
           >Scopri di più</a
         >
@@ -97,7 +100,9 @@ import { RouterLink } from '@angular/router';
           di natura emotiva, cognitiva o sociale, che la persona percepisce come
           eccessivi.
         </p>
-        <a routerLink="servizi" class="mt-4 text-green-500 hover:text-green-700"
+        <a
+          [routerLink]="'/servizi'"
+          class="mt-4 text-green-500 hover:text-green-700"
           >Scopri di più</a
         >
       </div>
@@ -129,7 +134,7 @@ import { RouterLink } from '@angular/router';
         </p>
         <app-button
           [btnlabel]="'Servizi'"
-          routerLink="servizi"
+          [routerLink]="'/servizi'"
           class="btn lg:btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5 sm btn-lg"
         ></app-button>
       </div>
@@ -145,7 +150,9 @@ import { RouterLink } from '@angular/router';
           comunicazione e gestione dei conflitti per creare una connessione più
           profonda e duratura.
         </p>
-        <a routerLink="servizi" class="mt-4 text-blue-500 hover:text-blue-700"
+        <a
+          [routerLink]="'/servizi'"
+          class="mt-4 text-blue-500 hover:text-blue-700"
           >Scopri di più</a
         >
       </div>
@@ -161,7 +168,7 @@ import { RouterLink } from '@angular/router';
           interiore.
         </p>
         <a
-          routerLink="servizi"
+          [routerLink]="'/servizi'"
           class="mt-4 text-purple-500 hover:text-purple-700"
           >Scopri di più</a
         >
@@ -177,7 +184,9 @@ import { RouterLink } from '@angular/router';
           per migliorare la comunicazione e creare un ambiente familiare più
           armonioso.
         </p>
-        <a routerLink="servizi" class="mt-4 text-green-500 hover:text-green-700"
+        <a
+          [routerLink]="'/servizi'"
+          class="mt-4 text-green-500 hover:text-green-700"
           >Scopri di più</a
         >
       </div>
@@ -216,7 +225,7 @@ import { RouterLink } from '@angular/router';
         </p>
         <app-button
           [btnlabel]="'Scopri di più'"
-          routerLink="chi-sono"
+          [routerLink]="'/servizi'"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
         ></app-button>
       </div>
@@ -231,7 +240,7 @@ import { RouterLink } from '@angular/router';
           consapevolezza.
         </p>
         <a
-          routerLink="servizi"
+          [routerLink]="'/servizi'"
           class="mt-4 inline-block text-yellow-500 hover:text-yellow-700"
           >Scopri di più</a
         >
@@ -246,7 +255,7 @@ import { RouterLink } from '@angular/router';
           benessere psicologico.
         </p>
         <a
-          routerLink="servizi"
+          [routerLink]="'/servizi'"
           class="mt-4 inline-block text-pink-500 hover:text-pink-700"
           >Scopri di più</a
         >
@@ -272,7 +281,7 @@ import { RouterLink } from '@angular/router';
         </p>
         <app-button
           [btnlabel]="'Scopi di più'"
-          routerLink="servizi"
+          [routerLink]="'/servizi'"
           class="btn btn-lg rounded-full bg-blue-300 border-0 hover:bg-blue-200 m-5 p-5"
         ></app-button>
       </div>

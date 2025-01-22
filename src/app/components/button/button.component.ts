@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   template: ` <button>{{ btnlabel }}</button> `,
   styles: ``,
 })
