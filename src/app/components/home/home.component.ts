@@ -368,14 +368,7 @@ import { RouterModule } from '@angular/router';
   }
 }
 
-// @media (max-width: 480px) {
-//   .home-background-yoga {
-//     width: 200px;
-//     height: 200px;
-//     margin: 0 auto; /* Mantieni centrata l'immagine */
-//   }
-// }
-  
+
   
 `,
 })
